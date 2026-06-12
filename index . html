@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yogi & Ukhti</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f8f5ef;
+    color:#333;
+    text-align:center;
+}
+
+.hero{
+    padding:60px 20px;
+}
+
+h1{
+    font-size:60px;
+    margin:10px 0;
+    color:#b08d57;
+}
+
+.subtitle{
+    font-size:20px;
+}
+
+.photo{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #d4af37;
+    margin-top:20px;
+}
+
+.card{
+    background:white;
+    max-width:700px;
+    margin:30px auto;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 0 15px rgba(0,0,0,.1);
+}
+
+.btn{
+    background:#b08d57;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.prank{
+    display:none;
+    margin-top:30px;
+    padding:20px;
+    background:#fff3cd;
+    border-radius:15px;
+}
+
+footer{
+    margin:40px;
+    color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <h3>Undangan Pernikahan</h3>
+    <h1>Yogi & Ukhti</h1>
+    <p class="subtitle">Sabtu, 20 Juni 2026</p>
+
+    <!-- Ganti yogi.jpg dengan foto lu -->
+    <img src="yogi.jpg" class="photo" alt="Yogi">
+</div>
+
+<div class="card">
+    <h2>Akad Nikah</h2>
+    <p>09.00 WIB</p>
+    <p>Masjid Nurul Iman</p>
+
+    <h2>Resepsi</h2>
+    <p>11.00 WIB</p>
+    <p>Gedung Serbaguna Bahagia</p>
+
+    <br>
+
+    <button class="btn" onclick="prank()">
+        Konfirmasi Kehadiran (RSVP)
+    </button>
+
+    <div class="prank" id="prank">
+        <h2>🎉 SURPRISEEEE 🎉</h2>
+        <p><b>Tidak ada akad.</b></p>
+        <p><b>Tidak ada resepsi.</b></p>
+        <p><b>Tidak ada Ukhti.</b> 😂</p>
+        <h3>Gera Kawin Zomblo.</h3>
+    </div>
+</div>
+
+<footer>
+    Dibuat dengan niat baik dan sedikit kenakalan 😆
+</footer>
+
+<script>
+function prank(){
+    document.getElementById("prank").style.display="block";
+    window.scrollTo({
+        top:document.body.scrollHeight,
+        behavior:"smooth"
+    });
+}
+</script>
+
+</body>
+</html>
